@@ -14,12 +14,28 @@ public class AboutMe {
 		System.out.println("My teacher is awesome and her name is Ms. Kemp");
 		System.out.println("I go to Lawrence Park Collegiate Institute in Toronto, Canada");
 		System.out.println("\"GO LPCI PANTHERS!");
-		System.out.println("------------------------------------------------------------------");
+		System.out.println("\n______________________________________________________________________________________________________________________________________");
 		// The next several statements display my course schedule for the week of September 23rd
 		System.out.println("My course schedule for the week of September 23rd");
-		System.out.println("\n__________________________________________________________________________________");
-		System.out.printf("%-19s%-20s%-20s%-20s%-20s", "Monday (September 23)", "Tuesday (September 24)", "Wednesday (September 25 *My B-Day*)", "Thursday (September 26)", "Friday (September 27)");
-		System.out.println("\n__________________________________________________________________________________");
-		System.out.printf("%-19s%-20s%-20s%-20s%-20s", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday");
-	}
-}
+		System.out.println("\n_________________________________________________________________________________________________________________________________________");
+		System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Monday (23rd)", "Tuesday (24th)", "Wednesday (25th *My B-Day*)", "Thursday (26th)", "Friday (27th)");
+		System.out.println("\n|________________________|_________________________|_________________________________|_________________________|_________________________|");
+		System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Period 1", "Period 1", "Period 1", "Period 1", "Period 1");
+		System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|ICS3U1-1:", "SBI3U1-3:", "ICS3U1-1:", "SBI3U1-1:", "ICS3U1-1:");
+		System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|9:00 AM - 10:15 AM", "9:00 AM - 10:15 AM", "9:55 AM - 10:55 AM", "9:00 AM - 10:15 AM", "9:00 AM - 10:15 AM");
+		System.out.println("\n|________________________|_________________________|_________________________________|_________________________|_________________________|");
+	    System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Period 2", "Period 2", "Period 2", "Period 2", "Period 2");
+	    System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|SBI3U1-3:", "ICS3U1-1:", "SBI3U1-1:", "ICS3U1-1:", "SBI3U1-1:");
+	    System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|10:20 AM - 11:40 AM", "10:20 AM - 11:40 AM", "11:00 AM - 12:05 PM", "10:20 AM - 11:40 AM", "10:20 AM - 11:40 AM");
+	    System.out.println("\n|________________________|_________________________|_________________________________|_________________________|_________________________|");
+	    System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Lunch Break:", "Lunch Break:", "Lunch Break:", "Lunch Break:", "Lunch Break:");
+	    System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|11:40 AM - 12: 40 PM", "11:40 AM - 12:40 PM", "12:05 PM - 1:05 PM", "11:40 AM - 12: 40 PM", "11:40 AM - 12: 40 PM");
+	    System.out.println("\n|________________________|_________________________|_________________________________|_________________________|_________________________|");
+	    System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Period 3", "Period 3", "Period 3", "Period 3", "Period 3");
+	    System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|TFJ3C1-3:", "SCH3U1-4:", "TFJ3C1-3:", "SCH3U1-4:", "TFJ3C1-3:");
+	    System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|12:40 PM - 1:55 PM", "12:40 PM - 1:55 PM", "1:05 PM - 2:10 PM", "12:40 PM - 1:55 PM", "12:40 PM - 1:55 PM");
+	    System.out.println("\n|________________________|_________________________|_________________________________|_________________________|_________________________|");
+	    
+	    
+	    
+}   }
