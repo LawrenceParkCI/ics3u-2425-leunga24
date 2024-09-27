@@ -2,10 +2,13 @@ package unit1;
 /**
  * Description: This program prints both the rules of BINGO and a BINGO card
  * Date: September 26, 2024
- *@author Adam Leung
+ * @author Adam Leung
  */
 public class Bingo {
-
+	/** 
+	 * This is the entry point to the program.
+	 * @param args unused
+	 */
 	public static void main(String[] args) {
 		// These are the rules and steps of the game BINGO
 		System.out.printf("%25s", "BINGO Rules:");
