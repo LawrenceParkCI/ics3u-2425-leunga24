@@ -22,7 +22,8 @@ public class AboutMe {
 		// The next several statements display my course schedule for the week of September 23rd
 		System.out.println("My course schedule for the week of September 23rd");
 		System.out.println("_________________________________________________________________________________________________________________________________________");
-		System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Monday (23rd)", "Tuesday (24th)", "Wednesday (25th *My B-Day*)", "Thursday (26th)", "Friday (27th)");
+		System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Monday (23rd)", "Tuesday (24"
+				+ "th)", "Wednesday (25th *My B-Day*)", "Thursday (26th)", "Friday (27th)");
 		System.out.println("\n|________________________|_________________________|_________________________________|_________________________|_________________________|");
 		System.out.printf("%-25s|%-25s|%-33s|%-25s|%-25s|", "|Period 1", "Period 1", "Period 1", "Period 1", "Period 1");
 		System.out.printf("\n%-25s|%-25s|%-33s|%-25s|%-25s|", "|ICS3U1-1:", "SBI3U1-3:", "ICS3U1-1:", "SBI3U1-3:", "ICS3U1-1:");
