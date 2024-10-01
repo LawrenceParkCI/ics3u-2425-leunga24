@@ -17,7 +17,7 @@ public class CreatingVariables {
 		//Warmup: print the calculation for the area of a square with side length 25
 		int x=25;
 		System.out.println("The value of area is " + x*x);
-		
+
 
 
 		//Key Question: what if the value I want to use needs to change?
@@ -43,7 +43,7 @@ public class CreatingVariables {
 		myNum = 20;
 		System.out.println("myNum is now " + myNum);
 		//Why do the two codes print out different things?
-		System.out.println("The statment changes what the variable was previously equal to")
+		System.out.println("The statment changes what the variable was previously equal to");
 
 		System.out.println("Part 2 - Creating a Variable");
 
@@ -66,14 +66,15 @@ public class CreatingVariables {
 		 */
 
 		//Declare and initialize an int variable called myAge that stores your age.
-
+		int myAge;
+		myAge=16;
 
 		//Print it out in a sentence (Hint: remember how we combined text and numbers in a print statement)
-
+		System.out.println("The value of myAge is " + myAge);
 		//Assign it a new value, that is 10 more than the original value
-
+		myAge=26;
 		//Print it out in a new sentence (Hint: remember how we combined text and numbers in a print statement)
-
+		System.out.println("The value of myAge is " + myAge);
 
 
 		//Note: When I use the word create in the future, I typically mean declare and initialize
