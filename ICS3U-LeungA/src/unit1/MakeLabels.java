@@ -18,7 +18,6 @@ public class MakeLabels {
 
 		String subject;
 		String name;
-		String last;
 		
 		System.out.println("Type in the subject and press <Enter>");
 		subject = sc.nextLine();
