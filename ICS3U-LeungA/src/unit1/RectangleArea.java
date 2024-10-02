@@ -31,7 +31,7 @@ public class RectangleArea {
 		int area = length * width;
 		
 		//print the output
-		System.out.println("The area of your rectangle is" + area);
+		System.out.println("The area of your rectangle is " + area);
 		sc.close();
 	}
 
