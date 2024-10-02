@@ -1,6 +1,6 @@
 package unit1;
 /**
- * Description: This program creates variables
+ * Description: This program makes labels
  * Date: October 2, 2024
  * @author Adam Leung
  */
