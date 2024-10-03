@@ -13,7 +13,7 @@ public class InputFP {
 	 * @param args unused
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc= new Scanner(System.in);
 		double num1, num2;
 		// Receives user input
@@ -28,7 +28,7 @@ public class InputFP {
 		System.out.println();
 		System.out.println("The first number entered was " + num1);
 		System.out.println("The second number entered was " + num2);
-
+		sc.close();
 	}
 
 }
