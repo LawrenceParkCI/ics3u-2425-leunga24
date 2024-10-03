@@ -1,7 +1,6 @@
 package unit1;
 
 import java.util.Scanner;
-
 /**
  * Description: This program calculates the volume of a cube
  * Date: October 2, 2024

@@ -1,9 +1,8 @@
 package unit1;
 
 import java.util.Scanner;
-
 /**
- * Description: This program 
+ * Description: This program teaches the programmer about inputing floating points
  * Date: October 3, 2024
  * @author Adam Leung
  */
