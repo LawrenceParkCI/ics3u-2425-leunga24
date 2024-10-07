@@ -1,6 +1,6 @@
 package unit1;
 /**
- * Description: This program 
+ * Description: This program plays with strings
  * Date: October 4, 2024
  * @author Adam Leung
  */
