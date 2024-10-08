@@ -1,6 +1,9 @@
 package unit1;
+
+import java.util.Scanner;
+
 /**
- * Description: This program calculates the amount of sleep and amount of days someone has been alive for
+ * Description: This program displays a sentence in multiple different ways
  * Date: October 7, 2024
  * @author Adam Leung
  */
@@ -18,11 +21,33 @@ public class StringManipulation {
 		String sentence;
 		
 		System.out.print("Write any sentence you would like:");
+		sentence = sc.nextLine();
 		
-		System.out.print(sentence);
+		//Output
+		System.out.println(sentence);
+		System.out.println(sentence.toUpperCase());
+		System.out.println(sentence.toLowerCase());
+		System.out.println(sentence.length());
+		System.out.println(sentence.charAt(5));
+		
+		
+		//bonus
+		System.out.println("\nBONUS");
+		
+		//First Word
+		System.out.println(sentence.substring(0, sentence.indexOf(" ")));
+		
+		//Last Word
+		System.out.println(sentence.indexOf(sentence.substring(sentence.lastIndexOf(" "))));
+		
+		sc.close();
+		
+		
 		
 		
 		
 	}
 
 }
+
+

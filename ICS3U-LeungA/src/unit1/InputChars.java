@@ -16,7 +16,7 @@ public class InputChars {
 		Scanner sc = new Scanner(System.in);
 		//Declare variables
 		char ch1, ch2, ch3;
-		//get user input
+		//Get user input
 		System.out.println("Type in any three characters on the keyboard");
 		System.out.println("Press <Enter> after each.");
 		ch1 = sc.nextLine().charAt(0);

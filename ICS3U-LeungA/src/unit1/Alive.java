@@ -45,10 +45,10 @@ public class Alive {
 		int sleep, alive;
 		
 		alive = (bYear - Year)*(365) + (bMonth - Month)*(30) + (bDay - Day);
-		System.out.println("You have been alive for " + alive + " days.");
+		System.out.println("You have been alive for " + alive + " day(s).");
 		
 		sleep = (alive * 8);
-		System.out.println("In your lifetime, you have slept a total of " + sleep + " hours.");
+		System.out.println("In your lifetime, you have slept a total of around " + sleep + " hours.");
 		
 		sc.close();
 
