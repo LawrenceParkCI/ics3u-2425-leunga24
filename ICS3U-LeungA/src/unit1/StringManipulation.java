@@ -38,7 +38,7 @@ public class StringManipulation {
 		System.out.println(sentence.substring(0, sentence.indexOf(" ")));
 		
 		//Last Word
-		System.out.println(sentence.indexOf(sentence.substring(sentence.lastIndexOf(" "))));
+		System.out.println(sentence.lastIndexOf(sentence.substring(sentence.indexOf(" "))));
 		
 		sc.close();
 		
