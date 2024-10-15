@@ -1,9 +1,9 @@
 package unit1;
 
 /**
-* Description: 
-* Date:
-* @author 
+* Description: This program teaches me more about Casting
+* Date: October 15, 2024
+* @author Adam Leung
 */
 public class Casting2 {
   
