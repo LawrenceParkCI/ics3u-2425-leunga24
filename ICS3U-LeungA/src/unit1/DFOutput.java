@@ -1,12 +1,11 @@
 package unit1;
+import java.text.DecimalFormat;
+import java.util.Scanner;
 /**
- * Description: This program teaches me how to learn about parameters and decimal formatting
+ * Description: This program teaches me how use parameters and decimal formatting
  * Date: October 17, 2024
  * @author Adam Leung 
  */
-import java.text.DecimalFormat;
-import java.util.Scanner;
-
 public class DFOutput {
 	/**
 	 * This is the entry point to the program.
