@@ -1,7 +1,7 @@
 package unit1;
 /**
  * Description: This program teaches me how to learn about parameters and decimal formatting
- * Date: October 16, 2024
+ * Date: October 17, 2024
  * @author Adam Leung 
  */
 import java.text.DecimalFormat;
