@@ -1,7 +1,7 @@
 package unit1;
 
 /**
- * Description:
+ * Description: This program teaches me how to comment more effectively
  * Date: October 16, 2024
  * @author Adam Leung 
  */
@@ -71,21 +71,15 @@ public class Commenting {
 		 */
 
 		num2 /= 2.5; //-6.4
-		System.out.println(num2);
 		num1 /= 2;//26
-		System.out.println(num1);
 		stringNum = stringNum + "; ";//52 -16.0;
-		System.out.println(stringNum);
 		stringNum = stringNum + num1 + " " + num2;//52 -16.0; 26 -6.4
-		System.out.println(stringNum);
-
-
 		/*
 		 * Variables Name    |   Value
 		 * ---------------------------------
-		 * num1              |
-		 * num2              |
-		 * stringNum         |
+		 * num1              |26
+		 * num2              |-16.0
+		 * stringNum         |52 -16.0; 26 -6.4
 		 */
 	}
 }
