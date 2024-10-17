@@ -1,12 +1,10 @@
 package unit1;
-
 /**
  * Description: This program teaches me how to comment more effectively
  * Date: October 16, 2024
  * @author Adam Leung 
  */
 public class Commenting {
-
 	/**
 	 * This is the entry point to the program.
 	 * @param args unused
