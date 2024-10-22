@@ -26,8 +26,9 @@ int Quantity2;
 String Item2;
 //Title
 System.out.println("|| $$$ \\\\\\ ========== \"Mr.Leung's Grocery\" ========== /// $$$ ||");
-System.out.println("_____________________________________________________________________");
+System.out.println("________________________________________________________________");
 // Receives Product #1 input
+System.out.println();
 System.out.print("What would you like to buy?:");
 Item = UPC.next();
 
@@ -37,9 +38,10 @@ Cost = UPC.nextDouble();
 System.out.print("How many are you buying?:");
 Quantity = UPC.nextInt();
 
+System.out.println("Exceptional!");
 //Receives Product #2 input
-
-System.out.print("What would you like to buy?:");
+System.out.println();
+System.out.print("What else would you like to buy?:");
 Item2 = UPC.next();
 
 System.out.print("How much does it cost?:");
@@ -48,6 +50,7 @@ Cost2 = UPC.nextDouble();
 System.out.print("How many are you buying?:");
 Quantity2 = UPC.nextInt();
 
+System.out.println("Extravagant");
 //Print the Receipt
 System.out.println();
 System.out.println("This is your recipt:");
@@ -57,15 +60,31 @@ DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 LocalDateTime now = LocalDateTime.now();  
 System.out.println(dtf.format(now));
 DecimalFormat money = new DecimalFormat("$#.00");
-double Total1, Total2;
+double Total1, Total2, FinalTotal, Tax, Sub;
+final double TAX_RATE = 0.13;
 Total1 = Quantity * Cost;
 Total2 = Quantity2 * Cost2;
+Sub = Total1 + Total2;
+Tax = (Total1 + Total2) * TAX_RATE;
+FinalTotal = (Total1 + Total2) + Tax;
+int approx;
+approx = (int) FinalTotal;
+
 System.out.println();
-System.out.printf("\n%7s%7s%9s%7s%9s%7s%14s", "Item", "|", "Cost", "|", "Quantity", "|", "Total Cost");
-System.out.printf("\n__________________________________________________________________");
-System.out.printf("\n%7s%7s%9s%7s%9s%7s%14s", Item, "|", money.format(Cost), "|", Quantity, "|", money.format(Total1));
-System.out.printf("\n%7s%7s%9s%7s%9s%7s%14s", Item2, "|", money.format(Cost2), "|", Quantity2, "|", money.format(Total2));
-System.out.printf("\n___________________________________________________________________");
+System.out.printf("\n%-14s%2s%14s%3s%-14s%3s%-2s", "Item", "|", "Cost", "| ", "Quantity", "| ", "Total Cost");
+System.out.printf("\n_______________|_______________|________________|__________________");
+System.out.printf("\n%-14s%2s%14s%3s%-14s%3s%10s", Item, "|", money.format(Cost), "| ", Quantity, "| ", money.format(Total1));
+System.out.printf("\n%-14s%2s%14s%3s%-14s%3s%10s", Item2, "|", money.format(Cost2), "| ", Quantity2, "| ", money.format(Total2));
+System.out.printf("\n_______________|_______________|________________|__________________");
+System.out.printf("\n%49s%11s", "Subtotal:", money.format(Sub));
+System.out.printf("\n%49s%11s","Tax:", money.format(Tax));
+System.out.printf("\n%49s%11s","Total:", money.format(FinalTotal));
+System.out.println();
+System.out.println("This is approximatley " + approx);
+System.out.println();
+System.out.println("Thank you for shopping at Mr.Leung's Grocery!");
+System.out.println("We hope to see you again soon!");
+System.out.println("Have a nice day");
 UPC.close();
 }
 	}
