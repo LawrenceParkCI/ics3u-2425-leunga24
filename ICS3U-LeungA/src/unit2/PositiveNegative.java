@@ -21,16 +21,16 @@ public class PositiveNegative {
 
 		//Calculates and displays output
 		if(integer >=  0) {
-			System.out.println("The integer is positive");
+			System.out.println(integer + " is a positive integer");
 		}
 		else {
-			System.out.println("The integer is negative");
+			System.out.println(integer + " is a negative integer");
 		}
 		if(integer %  7 == 0) {
-			System.out.println("The integer is divisible by 7");
+			System.out.println(integer + " is divisible by 7");
 		}
 		else {
-			System.out.println("The integer is not divisible by 7");
+			System.out.println(integer + " is not divisible by 7");
 		}
 		sc.close();
 	}

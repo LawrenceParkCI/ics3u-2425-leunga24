@@ -21,10 +21,10 @@ public class OddEven {
 
 		//Calculates and displays output
 		if(integer % 2 == 0) {
-			System.out.println("The integer is even");
+			System.out.println(integer + " is an even integer");
 		}
 		else {
-			System.out.println("The integer is odd");
+			System.out.println(integer + " is an odd integer");
 		}
 		sc.close();
 	}
