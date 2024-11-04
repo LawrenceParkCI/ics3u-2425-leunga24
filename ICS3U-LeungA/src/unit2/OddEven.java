@@ -2,7 +2,7 @@ package unit2;
 
 import java.util.Scanner;
 /**
- * Description: This program tests to see if the integer is odd or an even number
+ * Description: This program tests to see if the integer is an odd or an even number
  * Date: November 4, 2024
  * @author Adam Leung
  */
