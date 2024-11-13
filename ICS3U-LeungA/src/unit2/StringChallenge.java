@@ -86,7 +86,7 @@ public class StringChallenge {
 		if (num2 ==7) {
 			System.out.println("YOU ARE OFFICIALLY AMAZING!");
 		}else {
-			System.out.println("I am so dissapointed in you");
+			System.out.println("I am so dissapointed in you :(");
 				
 			}
 		sc.close();
