@@ -38,6 +38,7 @@ public class StringChallenge {
 			System.out.println("You did not follow the rules! :(");
 		}
 		//receiving input
+		System.out.println();
 		System.out.print("Type in your last name in all lower case:");
 		s3 = sc.next();
 		System.out.print("Type in your last name again but however you would like:");
@@ -50,6 +51,7 @@ public class StringChallenge {
 			System.out.println("You didn't type your last name in all lowercase when I asked! :(");
 		}
 		//receiving input
+		System.out.println();
 		System.out.print("Type in your favourite colour:");
 		s5 = sc.next();
 		System.out.print("Type in your least favourite colour:");
@@ -69,11 +71,14 @@ public class StringChallenge {
 		String s7;
 		s7 = "7";
 		//receiving input
+		System.out.println();
 		System.out.println("Type in your favourite number:");
 		num1 = sc.nextInt();
 		//displaying out
+		System.out.println();
 		System.out.println("Your favourite number is " + num1);//implicit casting. The Integer num1 is converted into a string for only this line of code!
 		System.out.println("Your favourite number added with my favourite number is " + (num1 + Integer.parseInt(s7)));//explicit casting. I am changing the data type of s7 from a string into an integer!
+		System.out.println();
 		System.out.println("This is the last question! If you get this right you win the entire game! If you get it wrong you lose the entire game!");
 		System.out.print("What is MY favoutire number?");
 		num2 = sc.nextInt();
