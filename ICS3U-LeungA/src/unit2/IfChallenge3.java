@@ -45,10 +45,12 @@ public class IfChallenge3 {
 		System.out.print("What is your name?");
 		name = sc.next();
 		System.out.println("Nice to meet you " + name);
+		Thread.sleep(2000);
 		System.out.println("Today's country quiz will consist of 4 multiple choice and 2 true or false questions! You need at least a 50% to pass.");
-		System.out.println("The test will begin in 10 seconds. No talking, no cellphones and no leaving this tab! Good luck " + name);
+		Thread.sleep(3000);
+		System.out.println("The test will begin in 5 seconds. No talking, no cellphones and no leaving this tab! Good luck " + name);
 		//Sleeping the following threads
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//Question #1 guess the border of the country
 		System.out.println("Question 1 (2 points):");
 		System.out.println("                 -=-=++=-::.     ");                                
