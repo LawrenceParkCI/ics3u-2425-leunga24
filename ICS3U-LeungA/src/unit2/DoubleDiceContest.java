@@ -24,7 +24,7 @@ public class DoubleDiceContest {
 		Thread.sleep(2000);
 		System.out.println("You and the computer will both roll 2 dice and whoever receives the higher sum wins!");
 		Thread.sleep(4000);
-		System.out.println("Write your lucky words and press <Enter> to roll your dice:");
+		System.out.println("Write down your lucky words and press <Enter> to roll your dice:");
 		roll = sc.nextLine();
 		System.out.println("Your dice are being rolled... May the odds be ever in your favour!");
 		System.out.println("");
