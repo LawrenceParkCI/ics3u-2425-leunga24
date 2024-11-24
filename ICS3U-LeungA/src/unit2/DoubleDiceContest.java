@@ -53,19 +53,19 @@ public class DoubleDiceContest {
 		//if statements displaying output
 		System.out.println("");
 		System.out.println("The sum of the computer's dice is " + (total2));
-	    if (point == 1) {
-		System.out.println("Wow! You barely won! You won by only 1 point :)");
+		if (point == 1) {
+			System.out.println("Wow! You barely won! You won by only 1 point :)");
 		}else if (point1 == 1) {
 			System.out.println("Yikes! You were so close! You lost by only 1 point :(");
-	    }else if (total1>total2) {
+		}else if (total1>total2) {
 			System.out.println("Congratulations! You won by " + (total1 - total2) + (" points!"));
 		}else if (total1==total2) {
 			System.out.println("Wow! You and the computer tied for " + (total1) + (" points!"));
 		}else {
 			System.out.println("Sorry! The computer won by " + (total2 - total1) + (" points. Better luck next time!"));
-			
-	}
-	    sc.close();
+
+		}
+		sc.close();
 	}
 }
 
