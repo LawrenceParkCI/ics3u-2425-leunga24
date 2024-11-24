@@ -1,4 +1,6 @@
 package unit2;
+
+import java.util.Scanner;
 /**
  * Description: This program is a game against the computer using 2 dice 
  * Date: November 21, 2024
@@ -15,11 +17,15 @@ public class DoubleDiceContest {
 		 * The program should output the total of the two dice for both the user and the computer, 
 		 * then announce who won: the computer, the user, or say it was a tie.
 		 */
+		Scanner sc = new Scanner (System.in);
 		//rules of the game
+		String roll;
 		System.out.println("Welcome to the Double Dice Contest!");
 		Thread.sleep(2000);
 		System.out.println("You and the computer will both roll 2 dice and whoever receives the higher sum wins!");
 		Thread.sleep(4000);
+		System.out.println("Write your lucky words and press <Enter> to roll your dice:");
+		roll = sc.nextLine();
 		System.out.println("Your dice are being rolled... May the odds be ever in your favour!");
 		System.out.println("");
 		Thread.sleep(6000);
@@ -45,6 +51,7 @@ public class DoubleDiceContest {
 		point = total1-total2;
 		point1 = total2-total1;
 		//if statements displaying output
+		System.out.println("");
 		System.out.println("The sum of the computer's dice is " + (total2));
 	    if (point == 1) {
 		System.out.println("Wow! You barely won! You won by only 1 point :)");
@@ -58,6 +65,7 @@ public class DoubleDiceContest {
 			System.out.println("Sorry! The computer won by " + (total2 - total1) + (" points. Better luck next time!"));
 			
 	}
+	    sc.close();
 	}
 }
 
