@@ -1,6 +1,6 @@
 package unit2;
 /**
- * Description: This program rolls two dice
+ * Description: This program is a game against the computer using 2 dice 
  * Date: November 21, 2024
  * @author Adam Leung
  */
@@ -16,21 +16,42 @@ public class DoubleDiceContest {
 		 * then announce who won: the computer, the user, or say it was a tie.
 		 */
 		System.out.println("Welcome to the Double Dice Contest!");
-		System.out.println("The point of the game is for you an the computer to roll 2 dice and the higher sum wins!");
-		System.out.println("Your dice are being rolled... May the odd be ever in your favour!");
-		Thread.sleep(3000);
-		int die1, die2, die3, die4;
+		Thread.sleep(2000);
+		System.out.println("You and the computer will both roll 2 dice and whoever receives the higher sum wins!");
+		Thread.sleep(4000);
+		System.out.println("Your dice are being rolled... May the odds be ever in your favour!");
+		System.out.println("");
+		Thread.sleep(6000);
+		int die1, die2, die3, die4, total1, total2, point, point1;
 		die1=(int)((Math.random()*6)+1);
 		die2=(int)((Math.random()*6)+1);
-		System.out.println("The sum of both of your dice is " + (die1 + die2));
-		System.out.println("For you to win, the computer needs to get below a sum of " + (die1 + die2));
+		total1=die1 + die2;
+		System.out.println("The sum of of your dice is " + (total1));
+		System.out.println("For you to win, the computer needs to get below a sum of " + (total1));
+		System.out.println("");
+		Thread.sleep(4000);
 		System.out.println("Now it is the computer's turn");
-		System.out.println("The computer's dice are being rolled... May the odd be ever in your favour!");
+		Thread.sleep(2000);
+		System.out.println("The computer's dice are being rolled...");
+		Thread.sleep(3000);
 		die3=(int)((Math.random()*6)+1);
 		die4=(int)((Math.random()*6)+1);
-		System.out.println("The sum of both of the computer's dice is " + (die3 + die4));
-
+		total2=die3 + die4;
+		point = total1-total2;
+		point1 = total2-total1;
+		System.out.println("The sum of the computer's dice is " + (total2));
+	    if (point == 1) {
+		System.out.println("Wow! You barely won! You won by only 1 point :)");
+		}else if (point1 == 1) {
+			System.out.println("Yikes! You were so close! You lost by only 1 point :(");
+	    }else if (total1>total2) {
+			System.out.println("Congratulations! You won by " + (total1 - total2) + (" points!"));
+		}else if (total1==total2) {
+			System.out.println("Wow! You and the computer tied for " + (total1) + (" points!"));
+		}else {
+			System.out.println("Sorry! The computer won by " + (total2 - total1) + (" points. Better luck next time!"));
+			
 	}
-
+	}
 }
 
