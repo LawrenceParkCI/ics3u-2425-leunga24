@@ -113,7 +113,7 @@ public class IfChallenge3 {
 			points += 2;
 		}
 		else {
-			
+
 		}
 		System.out.println();
 		//Question #2 guess the flag
@@ -155,7 +155,7 @@ public class IfChallenge3 {
 			points += 1;
 		}
 		else {
-			
+
 		}
 		System.out.println();
 		//Question #3 largest countries
@@ -172,7 +172,7 @@ public class IfChallenge3 {
 			points += 1;
 		}
 		else {
-			
+
 		}
 		System.out.println();
 		//Question 4 country with the highest GDP per capita
@@ -191,7 +191,7 @@ public class IfChallenge3 {
 			points += 2;
 		}
 		else {
-			
+
 		}
 		System.out.println();
 		//Question 5 largest mountain in North America
@@ -205,7 +205,7 @@ public class IfChallenge3 {
 			points += 1;
 		}
 		else {
-			
+
 		}
 		System.out.println();
 		//Question 6 deepest Fresh water lake
@@ -219,7 +219,7 @@ public class IfChallenge3 {
 			points += 1;
 		}
 		else {
-			
+
 		}
 		//Calculating the score of the test
 		System.out.println();
