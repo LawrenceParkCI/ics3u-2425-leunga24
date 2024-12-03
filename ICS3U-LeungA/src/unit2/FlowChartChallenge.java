@@ -16,6 +16,7 @@ public class FlowChartChallenge {
     How would the flow chart of the do-while loop
      and while loop differ?
 		 */
+		//
 
 		Scanner in = new Scanner(System.in);
 		String name;
