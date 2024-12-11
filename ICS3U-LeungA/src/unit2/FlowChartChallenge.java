@@ -16,8 +16,8 @@ public class FlowChartChallenge {
     How would the flow chart of the do-while loop
      and while loop differ?
 		 */
-		//https://app.diagrams.net/#G11oYIgzjGQEWtLcww4YtZ7BIHPdwPGZ2n#%7B%22pageId%22%3A%22TtdNb6wwfzWT9R66jQlB%22%7D
-		//The do-while and while loop differ as the while loop runs the condition first and the do-while loop is run once before running the condition
+		//https://drive.google.com/file/d/11oYIgzjGQEWtLcww4YtZ7BIHPdwPGZ2n/view?usp=sharing
+		//The do-while flow chart and while loop flow chart differ as the while loop runs the condition first and the do-while loop is run at least once before running the condition
 
 		Scanner in = new Scanner(System.in);
 		String name;
