@@ -168,7 +168,7 @@ public class IfChallenge3 {
 		System.out.println("E:None of the above");
 		System.out.print("Write the letter correspoding with your answer here:");
 		q3 = sc.next();
-		if (q3.equalsIgnoreCase("C") || q3.equalsIgnoreCase("Russia, Canada, U.S.A, China, Brazil")) {
+		if (q3.equalsIgnoreCase("D") || q3.equalsIgnoreCase("Russia, Canada, China, U.S.A, Brazil")) {
 			points += 1;
 		}
 		else {
