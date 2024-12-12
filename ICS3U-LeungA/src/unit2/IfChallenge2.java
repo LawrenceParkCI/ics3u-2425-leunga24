@@ -1,7 +1,7 @@
 package unit2;
 import java.util.Scanner;
 /**
- * Description: This program 
+ * Description: This program checks if numbers are in order 
  * Date: November 11, 2024
  * @author Adam Leung
  */
