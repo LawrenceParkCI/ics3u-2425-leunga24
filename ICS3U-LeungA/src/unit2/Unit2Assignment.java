@@ -61,7 +61,7 @@ public class Unit2Assignment {
 		Thread.sleep(5000);
 		//the escape starts
 		//Three choices
-		System.out.println("\nYou are now inside a small room. A red door and a timer that is counting down from 60 seconds appears infront of you. The word \"run\" is written on the door in a red liquid. Blood.");
+		System.out.println("\nYou are now inside a small room. A red door and a timer that is counting down from 10 seconds appears infront of you. The word \"run\" is written on the door in a red liquid. Blood.");
 		Thread.sleep(5000);
 		System.out.println("\nYou turn around and another red door appears infront of you. This door has the word \"swim\" written on it in the same red liquid.");
 		Thread.sleep(5000);
@@ -131,7 +131,7 @@ public class Unit2Assignment {
 			Thread.sleep(3000);
 			System.out.println("You forgot about the timer. The timer ends. You hope nothing happens...");
 			Thread.sleep(3000);
-			System.out.println("In a bright flash a burning pain is inficted onto you...");
+			System.out.println("In a bright flash a burning pain is inflicted onto you...");
 			Thread.sleep(3000);
 			System.out.println("The room blew up...");
 			Thread.sleep(2000);
@@ -144,7 +144,7 @@ public class Unit2Assignment {
 			System.out.println("Automatic game over.");
 			System.exit(0);
 		}
-		System.out.println("\nThe door shuts behinds you and dissapears, But you are now trembeling with fear...");
+		System.out.println("\nThe door shuts behinds you and disappears, But you are now trembling with fear...");
 		Thread.sleep(3000);
 		System.out.println("\nInfront of you stands a mysterious looking figure. It has no eyes but for some reason it feels like it's watching you.");
 		Thread.sleep(5000);
@@ -179,7 +179,7 @@ public class Unit2Assignment {
 			System.exit(0);
 		}
 		Thread.sleep(3000);
-		System.out.println("\nThe figure dissapears and leaves a note.");
+		System.out.println("\nThe figure disappears and leaves a note.");
 		Thread.sleep(3000);
 		System.out.println("\nYou open the note. It is a sequence of numbers.");
 		Thread.sleep(3000);
@@ -283,7 +283,7 @@ public class Unit2Assignment {
 						}else if (d8.equalsIgnoreCase("No")) {
 							System.out.println("\nYou remembered the rule!");
 							Thread.sleep(3000);
-							System.out.println("The mysterious figure dissapears once again and now a door appears in front of you.");
+							System.out.println("The mysterious figure disappears once again and now a door appears in front of you.");
 							Thread.sleep(3000);
 							System.out.println("A shining gold door.");
 							Thread.sleep(3000);
@@ -453,7 +453,7 @@ public class Unit2Assignment {
 				Thread.sleep(3000);
 				System.out.println("He pushes a button...");
 				Thread.sleep(3000);
-				System.out.println("It' explodes the cabin...");
+				System.out.println("It explodes the cabin...");
 				Thread.sleep(3000);
 				System.out.println("Game over.");
 				System.exit(0);
