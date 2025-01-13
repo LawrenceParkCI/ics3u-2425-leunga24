@@ -73,6 +73,7 @@ public class Unit2Assignment {
 			Thread.sleep(3000);
 			System.out.println("If you want to walk to the end of the hallway say \"walk\" if you want to run to the end of the hallway say \"run\"");
 			d2 = sc.nextLine();
+			//right choice
 			if (d2.equalsIgnoreCase("run")) {
 				System.out.println("\nWell done! You remembered what the door said.");
 				Thread.sleep(3000);
@@ -530,7 +531,7 @@ public class Unit2Assignment {
 		Thread.sleep(3000);
 		System.out.println("\nDo you want to talk to it? It could benefit you.");
 		Thread.sleep(2000);
-		System.out.println("\nYes or No");
+		System.out.println("\nYes or No.");
 		d4 = sc.nextLine();
 		//right choice
 		if (d4.equalsIgnoreCase("No")){
