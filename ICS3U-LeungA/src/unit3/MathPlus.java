@@ -14,7 +14,7 @@ public class MathPlus {
 		System.out.println(hypotenuse(21, 16));
 		System.out.println(numOfFactors(256));
 		System.out.println(isPrime(2));
-
+		
 		int [] arrayInt = {9, 4, 3, 66, 99};
 		System.out.println(sum(arrayInt));
 		System.out.println(min(arrayInt));
@@ -78,7 +78,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds the sum of all the ints (data type) in the array 
 	 *@param nums -> an array of integers
-	 *@return the sum of all integers in the nums array
+	 *@return the sum of all integers in the ints array
 	 */
 	public static int sum(int[] array) {
 		int total = 0;
@@ -90,7 +90,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds the sum of all the doubles (date type) in the array 
 	 *@param nums -> an array of doubles
-	 *@return sum of all doubles in the nums array
+	 *@return sum of all doubles in the doubles array
 	 */
 	public static double sum(double[] array) {
 		double total = 0;
@@ -102,7 +102,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds the smallest number (int data type) in the array returning its index 
 	 *@param nums -> an array of integers
-	 *@return index of smallest number in the nums array
+	 *@return index of smallest number in the ints array
 	 */
 	public static int min(int[] array) {
 		int min = 0;
@@ -117,7 +117,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds the smallest number (double data type) in the array and returns its index 
 	 *@param nums -> an array of doubles
-	 *@return index of smallest number in the nums array
+	 *@return index of smallest number in the doubles array
 	 */
 	public static double min(double[] array) {
 		int min = 0;
@@ -132,7 +132,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds the largest number in the array and returns its index 
 	 *@param nums -> an array of integer
-	 *@return index of biggest number in the nums array
+	 *@return index of biggest number in the int array
 	 */
 	public static int max(int[] array) {
 		int max = 0;
@@ -146,7 +146,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds the largest number in the array and returns its index 
 	 *@param nums -> an array of doubles
-	 *@return index of biggest number in the nums array
+	 *@return index of biggest number in the double array
 	 */
 	public static int max(double[] array) {
 		int max = 0;
@@ -161,7 +161,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds both the largest (int data type) and smallest (int data type) numbers in the array and returns the difference between the two
 	 *@param nums -> an array of integers
-	 *@return index of biggest number in the nums array
+	 *@return index of biggest number in the ints array
 	 */
 	public static int bigDifference(int[] array) {
 		int max = 0;
@@ -183,7 +183,7 @@ public class MathPlus {
 	/**
 	 *Description: This method finds both the biggest (double data type) and smallest (double data type) numbers in the array and returns the difference between the two
 	 *@param nums -> an array of doubles
-	 *@return index of biggest number in the nums array
+	 *@return index of biggest number in the doubles array
 	 */
 	public static double bigDifference(double[] array) {
 		int max = 0;
@@ -200,20 +200,4 @@ public class MathPlus {
 		double diff = array[max] - array[min];
 		return diff;
 	}
-
-	/**
-	 *Description: This method finds all of the factors of the number
-	 *@param num -> any integer
-	 *@return array of all the factors of the num
-	 */
-	public static int[] factors(int num){
-		int[] factors = new int[numOfFactors(num)];
-		int index = 0;
-		for (int i = num; i > 0; i --) {
-			if(num % i == 0) {
-				factors[index] = i;
-				index ++;
-			}
-		}return factors;
 	}
-}
