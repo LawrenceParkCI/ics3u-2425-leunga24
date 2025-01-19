@@ -139,6 +139,10 @@ public class Arrays {
 		student[0] = "nathalie";
 		student[1] = "patrick";
 		student[2] = "daniela";
+		System.out.println(student[0]);
+		System.out.println(student[1]);
+		System.out.println(student[2]);
+
 
 
 		/**
