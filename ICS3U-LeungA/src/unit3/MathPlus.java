@@ -14,7 +14,7 @@ public class MathPlus {
 		System.out.println(hypotenuse(21, 16));
 		System.out.println(numOfFactors(256));
 		System.out.println(isPrime(2));
-		
+
 		int [] arrayInt = {9, 4, 3, 66, 99};
 		System.out.println(sum(arrayInt));
 		System.out.println(min(arrayInt));
@@ -200,4 +200,4 @@ public class MathPlus {
 		double diff = array[max] - array[min];
 		return diff;
 	}
-	}
+}
