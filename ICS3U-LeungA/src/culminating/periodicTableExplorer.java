@@ -1022,7 +1022,7 @@ public class periodicTableExplorer {
 	}
 
 
-	//This method asks the user if they want to explore more of the periodic table
+	//This method asks the user if they want to explore the periodic table more
 	public static boolean askToContinue(Console c) {
 		c.print("Would you like to explore more? (yes/no): ");
 		String response = c.readLine();
