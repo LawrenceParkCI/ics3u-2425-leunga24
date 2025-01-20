@@ -8,22 +8,25 @@ Date: January 14, 2025
 @author Adam Leung
  */
 public class periodicTableExplorer {
+	static Console c = new Console(80, 160, 18, "Periodic Table Explorer");
+	
 	public static void main(String[] args) {
-		Console c = new Console(80, 160, 16, "Periodic Table Explorer");  // Creates the console with 80 rows, 160 columns, and font size 12
-		c.setFont(new Font("Serif", Font.PLAIN, 16) );
+		  // Creates the console with 80 rows, 160 columns, and font size 12
 		while (true) {
 			//Show the main menu
-			menu(c);
-			if (!askToContinue(c)) {
+			menu();
+			if (!askToContinue()) {
 				//Display the exit message
 				c.println("Thank you for using the Periodic Table Explorer. I hope it helped you learn!"); 
 				//Exits the program
-				break;  
+				c.close();
 			}
 		}
 	}
 	//Displays the menu and does user input
-	public static void menu(Console c) {
+	public static void menu() {
+		String [] elements = {"hi"};
+		
 		//Clears the console and displays the menu
 		c.clear();
 		c.println("Welcome to the Periodic Table Explorer!");
@@ -41,28 +44,28 @@ public class periodicTableExplorer {
 			String element = c.readLine();
 			c.print("\n");
 			//calls the elements method
-			elements(element, c);
+			elements(element);
 			break;
 			//This explores the given group
 		case 2:  
 			c.print("Enter the group number: ");
 			int group = c.readInt();
 			c.print("\n");
-			groups(group, c);
+			groups(group);
 			break;
 			//This explores the given period
 		case 3:  
 			c.print("Enter the period number: ");
 			int period = c.readInt();
 			c.print("\n");
-			periods(period, c);
+			periods(period,elements);
 			break;
 			//This will tell the user that it is't an option
 		default:  
 			c.println("That is not an option.");
 		}}
 	//Displays the details about an element
-	public static void elements(String element, Console c) {
+	public static void elements(String element) {
 		if (element.equalsIgnoreCase("H") || element.equalsIgnoreCase("Hydrogen")) {
 			c.println("Element: Hydrogen (H)");
 			c.println("Atomic Number: 1");
@@ -889,7 +892,11 @@ public class periodicTableExplorer {
 
 
 	// Displays details about a group
-	public static void groups(int group, Console c) {
+	/**
+	 * 
+	 * @param group
+	 */
+	public static void groups(int group) {
 		if (group == 1) {//Alkali Metals
 			c.println("Group: 1 (Alkali Metals)");
 			c.println("Valence Electrons: 1");
@@ -987,8 +994,8 @@ public class periodicTableExplorer {
 
 
 	//Displays the details about a period
-	public static void periods(int period, Console c) {
-		if (period == 1) { //period 1
+	public static void periods(int period, String [] elements) {
+		if (period == 1) {//period 1
 			c.println("Period: 1");
 			c.println("Elements: Hydrogen (H), Helium (He)");
 			c.println("Electron Shells: 1");
@@ -1023,7 +1030,7 @@ public class periodicTableExplorer {
 
 
 	//This method asks the user if they want to explore the periodic table more
-	public static boolean askToContinue(Console c) {
+	public static boolean askToContinue() {
 		c.print("Would you like to explore more? (yes/no): ");
 		String response = c.readLine();
 		return response.equalsIgnoreCase("yes");
