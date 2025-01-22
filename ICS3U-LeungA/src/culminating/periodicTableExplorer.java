@@ -31,6 +31,7 @@ public class periodicTableExplorer {
 	 */
 	public static void menu() {
 		c.clear();
+		//welcomes user and gives user 3 options
 		c.println("Welcome to the Periodic Table Explorer!");
 		c.println("\n1. Explore an Element");
 		c.println("2. Explore a Group");
@@ -93,8 +94,10 @@ public class periodicTableExplorer {
 	 * @param element -> the symbol or name of the element
 	 */
 	public static void elements(String element) {
+		//covers up the image
 		c.setColor(Color.WHITE);
 		c.fillRect(820, 0, 700, 500);
+		//displays all the relevant information for the given element
 		if (element.equalsIgnoreCase("H") || element.equalsIgnoreCase("Hydrogen")){
 			c.println("Element: Hydrogen (H)");
 			c.println("Atomic Number: 1");
@@ -1006,9 +1009,11 @@ public class periodicTableExplorer {
 	 * @param group -> a number between 1 and 18 (group numbers)
 	 */
 	public static void groups(int group) {
+		//covers up the image
 		c.setColor(Color.WHITE);
 		c.fillRect(820, 0, 700, 500);
 		if (group >= 1 && group <= 18) {
+			//displays all the relevant information on the given group
 			c.println("Group: " + group + groupNames[group - 1]);
 			c.println("Valence Electrons: " + groupElectrons[group - 1]);
 			c.println("Elements: " + String.join(", ", groupElements[group - 1]));
@@ -1022,9 +1027,11 @@ public class periodicTableExplorer {
 	 * @param period -> a number between 1 and 7 (period numbers)
 	 */
 	public static void periods(int period) {
+		//covers up the image
 		c.setColor(Color.WHITE);
 		c.fillRect(820, 0, 700, 500);
 		if (period >= 1 && period <= 7) {
+			//displays all the relevant information on the given period
 			c.println("Period: " + period);
 			c.println("Elements: " + String.join(", ", periodElements[period - 1]));
 			c.println("Electron Shells: " + period);
@@ -1036,10 +1043,9 @@ public class periodicTableExplorer {
 	 * Description: This method asks the user if they want to continue using the program
 	 */
 	public static boolean askToContinue() {
-		c.setColor(Color.WHITE);
-		c.fillRect(820, 0, 700, 500);
 		c.print("\nWould you like to explore more? (yes/no): ");
 		String response = c.readLine();
+		//returns yes
 		return response.equalsIgnoreCase("yes");
 	}
 }
