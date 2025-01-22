@@ -1019,7 +1019,7 @@ public class periodicTableExplorer {
 			c.println("Elements: " + String.join(", ", groupElements[group - 1]));
 			c.println("Description: " + groupDescriptions[group - 1]);
 		} else {
-			c.println("That group number does not exist on the periodic table. There are only 18 groups on the periodic table.");
+			c.println("That group number does not exist on the periodic table. There are 18 groups on the periodic table.");
 		}
 	}
 	/**
@@ -1036,7 +1036,7 @@ public class periodicTableExplorer {
 			c.println("Elements: " + String.join(", ", periodElements[period - 1]));
 			c.println("Electron Shells: " + period);
 		} else {
-			c.println("This period does not exist on the periodic table. There are only 7 periods on the periodic table.");
+			c.println("This period does not exist on the periodic table. There are 7 periods on the periodic table.");
 		}
 	}
 	/**
