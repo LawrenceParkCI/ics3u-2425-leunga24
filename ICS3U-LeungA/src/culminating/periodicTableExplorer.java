@@ -1,5 +1,10 @@
 package culminating;
 import hsa_new.Console;
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 /**
 Description: This program explores the periodic table
 Date: January 14, 2025
@@ -7,7 +12,7 @@ Date: January 14, 2025
  */
 public class periodicTableExplorer {
 	// Creates the console with 80 rows, 160 columns, and font size 18
-	static Console c = new Console(80, 160, 18, "Periodic Table Explorer");
+	static Console c = new Console(500, 500, 18, "Periodic Table Explorer");
 	public static void main(String[] args) {
 		while (true) {
 			//Show the main menu
@@ -31,13 +36,21 @@ public class periodicTableExplorer {
 		c.println("2. Explore a Group");
 		c.println("3. Explore a Period");
 		c.print("\nEnter your choice (1-3): ");
-		c.print("");
+		c.print("");	
+		BufferedImage table = null;
 		//This gets user's choice
 		int choice = c.readInt();
 		switch (choice) {
 		//This explores the given element
 		case 1:  
 			c.print("Enter the element symbol or name: ");
+			try {
+				table = ImageIO.read(new File("src/photos/Periodic_Table (1).png"));
+			} catch (IOException e) {
+				c.println("There was an error loading the image.");
+				e.printStackTrace(); //prints the error and line of code
+			}
+			c.drawImage (table, 820, 0, 700, 500, null);
 			String element = c.readLine();
 			c.print("\n");
 			//calls the elements method
@@ -46,6 +59,13 @@ public class periodicTableExplorer {
 			//This explores the given group
 		case 2:  
 			c.print("Enter the group number: ");
+			try {
+				table = ImageIO.read(new File("src/photos/Periodic_Table (1).png"));
+			} catch (IOException e) {
+				c.println("There was an error loading the image.");
+				e.printStackTrace(); //prints the error and line of code
+			}
+			c.drawImage (table, 820, 0, 700, 500, null);
 			int group = c.readInt();
 			c.print("\n");
 			groups(group);
@@ -53,6 +73,13 @@ public class periodicTableExplorer {
 			//This explores the given period
 		case 3:  
 			c.print("Enter the period number: ");
+			try {
+				table = ImageIO.read(new File("src/photos/Periodic_Table (1).png"));
+			} catch (IOException e) {
+				c.println("There was an error loading the image.");
+				e.printStackTrace(); //prints the error and line of code
+			}
+			c.drawImage (table, 820, 0, 700, 500, null);
 			int period = c.readInt();
 			c.print("\n");
 			periods(period);
@@ -66,6 +93,8 @@ public class periodicTableExplorer {
 	 * @param element -> the symbol or name of the element
 	 */
 	public static void elements(String element) {
+		c.setColor(Color.WHITE);
+		c.fillRect(820, 0, 700, 500);
 		if (element.equalsIgnoreCase("H") || element.equalsIgnoreCase("Hydrogen")){
 			c.println("Element: Hydrogen (H)");
 			c.println("Atomic Number: 1");
@@ -899,9 +928,9 @@ public class periodicTableExplorer {
 	};
 	//makes it easier to display all elements for each group using [][] (a list in a list)
 	static String[][] groupElements = {//Group 1
-			{"Hydrogen (H)", "Lithium (Li)", "Sodium (Na)", "Potassium (K)", "Rubidium (Rb)", "Cesium (Cs)", "Francium (Fr)"}, 
+			{"Hydrogen (H)", "Lithium (Li)", "Sodium (Na)", "Potassium (K)", "\nRubidium (Rb)", "Cesium (Cs)", "Francium (Fr)"}, 
 			//Group 2
-			{"Beryllium (Be)", "Magnesium (Mg)", "Calcium (Ca)", "Strontium (Sr)", "Barium (Ba)", "Radium (Ra)"}, 
+			{"Beryllium (Be)", "Magnesium (Mg)", "Calcium (Ca)", "Strontium (Sr)", "\nBarium (Ba)", "Radium (Ra)"}, 
 			//Group 3
 			{"Scandium (Sc)", "Yttrium (Y)", "Lanthanum (La)", "Actinium (Ac)"}, 
 			//Group 4
@@ -923,17 +952,17 @@ public class periodicTableExplorer {
 			//Group 12
 			{"Zinc (Zn)", "Cadmium (Cd)", "Mercury (Hg)", "Copernicium (Cn)"}, 
 			//Group 13
-			{"Boron (B)", "Aluminum (Al)", "Gallium (Ga)", "Indium (In)", "Thallium (Tl)", "Nihonium (Nh)"}, 
+			{"Boron (B)", "Aluminum (Al)", "Gallium (Ga)", "Indium (In)", "Thallium (Tl)", "\nNihonium (Nh)"}, 
 			//Group 14
-			{"Carbon (C)", "Silicon (Si)", "Germanium (Ge)", "Tin (Sn)", "Lead (Pb)", "Flerovium (Fl)"}, 
+			{"Carbon (C)", "Silicon (Si)", "Germanium (Ge)", "Tin (Sn)", "Lead (Pb)", "\nFlerovium (Fl)"}, 
 			//Group 15
-			{"Nitrogen (N)", "Phosphorus (P)", "Arsenic (As)", "Antimony (Sb)", "Bismuth (Bi)", "Moscovium (Mc)"}, 
+			{"Nitrogen (N)", "Phosphorus (P)", "Arsenic (As)", "Antimony (Sb)", "Bismuth (Bi)", "\nMoscovium (Mc)"}, 
 			//Group 16
-			{"Oxygen (O)", "Sulfur (S)", "Selenium (Se)", "Tellurium (Te)", "Polonium (Po)", "Livermorium (Lv)"}, 
+			{"Oxygen (O)", "Sulfur (S)", "Selenium (Se)", "Tellurium (Te)", "Polonium (Po)", "\nLivermorium (Lv)"}, 
 			//Group 17
-			{"Fluorine (F)", "Chlorine (Cl)", "Bromine (Br)", "Iodine (I)", "Astatine (At)", "Tennessine (Ts)"}, 
+			{"Fluorine (F)", "Chlorine (Cl)", "Bromine (Br)", "Iodine (I)", "Astatine (At)", "\nTennessine (Ts)"}, 
 			//Group 18
-			{"Helium (He)", "Neon (Ne)", "Argon (Ar)", "Krypton (Kr)", "Xenon (Xe)", "Radon (Rn)", "Oganesson (Og)"}};
+			{"Helium (He)", "Neon (Ne)", "Argon (Ar)", "Krypton (Kr)", "Xenon (Xe)", "Radon (Rn)", "\nOganesson (Og)"}};
 	static String[] groupDescriptions = {
 			"Highly reactive metals, especially with water. Most reactive family on the periodic table.", 
 			"Reactive metals, but less so than alkali metals.", 
@@ -977,6 +1006,8 @@ public class periodicTableExplorer {
 	 * @param group -> a number between 1 and 18 (group numbers)
 	 */
 	public static void groups(int group) {
+		c.setColor(Color.WHITE);
+		c.fillRect(820, 0, 700, 500);
 		if (group >= 1 && group <= 18) {
 			c.println("Group: " + group + groupNames[group - 1]);
 			c.println("Valence Electrons: " + groupElectrons[group - 1]);
@@ -991,6 +1022,8 @@ public class periodicTableExplorer {
 	 * @param period -> a number between 1 and 7 (period numbers)
 	 */
 	public static void periods(int period) {
+		c.setColor(Color.WHITE);
+		c.fillRect(820, 0, 700, 500);
 		if (period >= 1 && period <= 7) {
 			c.println("Period: " + period);
 			c.println("Elements: " + String.join(", ", periodElements[period - 1]));
@@ -1003,6 +1036,8 @@ public class periodicTableExplorer {
 	 * Description: This method asks the user if they want to continue using the program
 	 */
 	public static boolean askToContinue() {
+		c.setColor(Color.WHITE);
+		c.fillRect(820, 0, 700, 500);
 		c.print("\nWould you like to explore more? (yes/no): ");
 		String response = c.readLine();
 		return response.equalsIgnoreCase("yes");
